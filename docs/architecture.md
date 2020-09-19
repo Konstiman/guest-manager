@@ -1,0 +1,17 @@
+# Architecture
+
+## System design
+
+The system is a serverless, single page application. A nosql database is used
+to store the data. Authentication is done by a third-party service. Backend
+services are managed by a cloud solution.
+
+## Technologies
+
+Language: JavaScript
+
+Libraries: React.js, MaterialUI
+
+Backend: Google Firebase
+
+Backend operations: Google Cloud Functions
