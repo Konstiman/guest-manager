@@ -15,3 +15,8 @@ Libraries: React.js, MaterialUI
 Backend: Google Firebase
 
 Backend operations: Google Cloud Functions
+
+## Prototype
+
+The Figma prototype (in Czech) can be found [here](https://www.figma.com/proto/9sgqCVsU7n3Fcl1EEdr4Hd/Guest-Manager?node-id=1%3A64&scaling=min-zoom).
+It covers the basic system functions and layout.
