@@ -15,10 +15,18 @@ const firebaseConfig = {
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-const firestore = firebase.firestore();
-
 const firebaseAppAuth = firebaseApp.auth();
 
-export const config = firebaseConfig;
+/**
+ * Firestore object to access database
+ */
+export const firestore = firebase.firestore();
+
+// TODO remove
+//export const config = firebaseConfig;
+
+/**
+ * Auth wrapper for singing in
+ */
 export const withAuth = withFirebaseAuth({ firebaseAppAuth });
 
