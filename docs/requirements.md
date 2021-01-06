@@ -18,6 +18,7 @@ personnel being able to access it.
 3. Edit or delete an existing entry
 4. Filter/group the entries by time interval (one month possibly)
 5. Create a printable output (table) for a specified time interval
+6. Change user profile data: e-mail address and name
 
 ## Guest information
 
