@@ -13,7 +13,7 @@ The user can also change the following data in the Settings section:
 - displayed name
 
 ```
-user: Map {
+user: Object {
   uid: String
   email: String
   displayName: String
@@ -23,34 +23,30 @@ user: Map {
 
 ## Guesthouse data
 
-The data stored about the user's guesthouse origin from the required data described in the [System requirements](./requirements.md).
+The data originate from the required data described in the [System requirements](./requirements.md).
 
-The user can read and modify only data from their guesthouse.
+The user can read and modify only their own data.
 
 ```
-guesthouses: Map {
-  <fk to user.uid>: Map {
-    guests: Array [
-      {
-        uid: Number
-        seqNum: Number
-        firstName: String
-        lastName: String
-        purpose: String
-        ID: String
-        address: Map {
-          country: String
-          place: String
-          district: String
-          street: String
-          number: String
-        }
-        arrival: Timestamp
-        departure: Timestamp
-        note: String
-      }
-    ]
+guests: Collection [
+  {
+    id: String
+    user: <fk to user.uid>
+    seqNum: Number
+    firstName: String
+    lastName: String
+    purpose: String
+    ID: String
+    address: Map {
+      country: String
+      place: String
+      district: String
+      street: String
+      number: String
+    }
+    arrival: Timestamp
+    departure: Timestamp
+    note: String
   }
-}
-
+]
 ```
