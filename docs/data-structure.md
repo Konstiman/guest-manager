@@ -29,14 +29,13 @@ The user can read and modify only their own data.
 
 ```
 guests: Collection [
-  {
-    id: String
+  id: String : {
     user: <fk to user.uid>
     seqNum: Number
     firstName: String
     lastName: String
     purpose: String
-    ID: String
+    document: String
     address: Map {
       country: String
       place: String
