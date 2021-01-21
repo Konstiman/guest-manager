@@ -32,7 +32,7 @@ const Records : FC<Props> = ({ user }) => {
         "Konstant",
         "rekreace",
         "200400615",
-        new Address("CZ", "Brno", "Líšeň", "Šimáčkova", "285/113"),
+        new Address("CZ", "Brno", "Líšeň", "628 00", "Šimáčkova", "285/113"),
         new Date(),
         new Date(),
         "nic"
