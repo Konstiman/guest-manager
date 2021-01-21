@@ -19,6 +19,8 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import lightBlue from "@material-ui/core/colors/lightBlue";
 import grey from "@material-ui/core/colors/grey";
 
+import { Container } from "@material-ui/core";
+
 const toolbarColor = lightBlue[800];
 const fontColor = grey[50];
 
@@ -51,7 +53,7 @@ function App(props) {
       <ThemeProvider theme={mainTheme}>
         <BrowserRouter>
           <AppToolbar authenticated={!!user} signOut={signOut} />
-          <div>
+          <Container maxWidth="lg" style={{marginTop: 20}}>
             <Switch>
               <Route exact path="/register">
                 {!!user ? <Redirect to="/" /> : <Register {...loginProps} />}
@@ -70,7 +72,7 @@ function App(props) {
               />
               <Route component={NotFound} />
             </Switch>
-          </div>
+          </Container>
         </BrowserRouter>
       </ThemeProvider>
     </div>
